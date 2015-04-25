@@ -86,6 +86,7 @@ def solve(i, j, k, l):
     '''
     this function solves a problem and could return solutions
     this code borrowed from http://v5b7.com/python/python_24.html#sec-1
+    alternative http://rosettacode.org/wiki/24_game/Solve#Python
     '''
     arr=[i, j, k, l]
 
