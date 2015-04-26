@@ -64,7 +64,8 @@ def primefunc():        #prime function used to get 4 cards
     
     
 # def a dictionary to look up points a card represents
-points = ('A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 
+# '10' is replaced by '0' since only one charactor was chosen
+points = ('A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 
           'J', 'Q', 'K')
 d={}
 for i,j in enumerate(points, 1):
@@ -74,9 +75,6 @@ def question():         # throw the question out
     num = primefunc()   # a list of 4 cards
     print num
     num = [i[-1] for i in num]
-    if '0' in num:
-        num.remove('0')
-        num.append('10')
     i, j, k, l = [d[i] for i in num]    # the points indicate the
                                             # the number it represents
     print 'corresponding numbers are', i, j, k, l
