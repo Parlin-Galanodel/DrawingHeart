@@ -5,7 +5,9 @@ Created on Fri Apr 24 22:46:19 2015
 @author: Galanodel
 """
 
+from __future__ import division
 import random
+
 
 class Deck(object):
     '''
@@ -25,10 +27,10 @@ class Deck(object):
         '''
         static method used to generate a brandnew deck of playing cards
         '''
-        suits = ['diamond', 'club', 'spade', 'heart']
+        suits = ('diamond', 'club', 'spade', 'heart')
 
-        points = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-                  'J', 'Q', 'K']
+        points = ('A', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+                  'J', 'Q', 'K')
 
         deck=[]
 
@@ -62,8 +64,8 @@ def primefunc():        #prime function used to get 4 cards
     
     
 # def a dictionary to look up points a card represents
-points = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 
-          'J', 'Q', 'K']
+points = ('A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 
+          'J', 'Q', 'K')
 d={}
 for i,j in enumerate(points, 1):
     d[j] = int(i)
